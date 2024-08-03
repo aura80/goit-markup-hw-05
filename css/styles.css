@@ -849,7 +849,7 @@ img {
 }
 
 .input-class:focus,
-.modal-inputs:focus .modal-div-input .modal-input-svg {
+.input-class:focus .modal-div-input .modal-input-svg {
   border-color: #4d5ae5;
   fill: #4d5ae5;
 }
