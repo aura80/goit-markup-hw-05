@@ -69,7 +69,9 @@
         <div class="container effective">
           <h1 class="effective-hunu">Effective Solutions for Your Business</h1>
 
-          <button type="button" class="service-button">Order Service</button>
+          <button type="button" class="service-button btn-modal">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -484,7 +486,71 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-subscribe">
+          <p class="footer-social-subscribe">Subscribe</p>
+          <label for="email"></label>
+          <input
+            class="input-subscribe"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+          />
+          <button class="button-subscribe" type="submit">
+            Subscribe
+            <svg class="svg-subscribe" width="24" height="20">
+              <use href="./images/icons.svg#icon-subscribe"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
+
+    <div class="modal-backdrop">
+      <div class="modal-container">
+        <!-- <h4>Titlu modal</h4> -->
+
+        <button type="button" class="btn-close-modal">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-close" />
+          </svg>
+        </button>
+        <div class="modal-content">
+          <p class="modal-p">Leave your contacts and we will call you back</p>
+          <div class="modal-inputs">
+            <label class="label-class" for="name">Name</label>
+            <input class="input-class" type="text" id="name" name="name" />
+
+            <label class="label-class" for="phone">Phone</label>
+            <input class="input-class" type="tel" id="phone" name="phone" />
+
+            <label class="label-class" for="email">Email</label>
+            <input class="input-class" type="email" id="email" name="email" />
+
+            <label class="label-class" for="comment">Comment</label>
+            <input
+              class="input-class comment"
+              type="text"
+              id="comment"
+              name="comment"
+              placeholder="Text input"
+            />
+            <div class="modal-check-terms">
+              <svg class="modal-checkbox" width="16" height="16">
+                <use href="./images/icons.svg#icon-checkbox" />
+              </svg>
+              <p class="modal-terms">
+                I accept the terms and conditions of the
+                <a href="#" class="modal-policy">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
+          <button class="modal-send" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
