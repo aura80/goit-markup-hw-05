@@ -801,6 +801,10 @@ img {
 }
 
 .modal-inputs {
+  margin-bottom: 8px;
+}
+
+.comments {
   margin-bottom: 16px;
 }
 
